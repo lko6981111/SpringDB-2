@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ItemRepository {
-
+    //메모리 구현체에서 향후 다양한 데이터 접근 기술 구현체로 손쉽게 변경하기 위해 리포지토리에 인터페이스를 도입
     Item save(Item item);
 
     void update(Long itemId, ItemUpdateDto updateParam);
