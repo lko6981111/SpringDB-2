@@ -21,6 +21,12 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //타임리프 사용
 	implementation 'org.springframework.boot:spring-boot-starter-web' //스프링 웹, MVC 기능 사용
+
+	//JdbcTemplate 추가
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	//H2 데이터베이스 추가
+	runtimeOnly 'com.h2database:h2'
+
 	compileOnly 'org.projectlombok:lombok'//롬복
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test' //스프링이 제공하는 테스트 기능
