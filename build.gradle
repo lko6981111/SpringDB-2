@@ -22,10 +22,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' //타임리프 사용
 	implementation 'org.springframework.boot:spring-boot-starter-web' //스프링 웹, MVC 기능 사용
 
-	//JdbcTemplate 추가
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	//JdbcTemplate 추가 <- JPA 추가 시, 따로 설정 안해도 된다.
+	//implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	//MyBatis 추가
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'//공식적으로 지원하지 않으면 버전정보 명시적으로 표시하기
+	//JPA, 스프링 데이터 JPA 추가
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
 	//H2 데이터베이스 추가
 	runtimeOnly 'com.h2database:h2'
 
