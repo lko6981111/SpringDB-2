@@ -12,14 +12,15 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.persistence.EntityManager;
 
+@RequiredArgsConstructor
 @Configuration
 public class JpaConfig {
 
     private final EntityManager em;
 
-    public JpaConfig(EntityManager em) {
-        this.em = em;
-    }
+//    public JpaConfig(EntityManager em) {
+//        this.em = em;
+//    }
 
     @Bean
     public ItemService itemService() {
